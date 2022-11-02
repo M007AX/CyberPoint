@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+
+body {
+  background-image: url("Pattern_min-02.svg");
+  overflow: hidden;
+}
+
+.form, select {
+  border: 2px solid white;
+  box-sizing: border-box;
+  padding: 1% 1%;
+  margin: 1% 1%;
+  background: #1E1E1E;
+  color: white;
+  width: 90%;
+  height: 40px;
+}
+
+
+.checkbox, select {
+  border: 1px solid white;
+  box-sizing: border-box;
+  background: white;
+}
+
+
+input[required]::after {
+content: "*";
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+   color: white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: white;
+}
+
+
+.f1 {
+  font-family: Aeroport, Aeroport, normal;
+}
+
+.singin {
+  background-image: url("Pattern_min-01.svg");
+  border: 0px;
+  color: white;
+  width: 100%;
+  height: 40px;
+  padding: 0px 10px;
+  font-family: 'Squartiqa4FUltraLight';
+  cursor: pointer;
+}
+
+.singin:hover {
+    filter: brightness(120%);
+}
+
+
+.singup {
+  background: None;
+  border: 4px solid #B42A40;
+  color: white;
+  width: 100%;
+  height: 40px;
+  padding: 0px 10px;
+  font-family: 'Squartiqa4FUltraLight', Squartiqa4FUltraLight, normal;
+  cursor: pointer;
+}
+.singup:hover {
+  filter: brightness(120%);
+}
+.invisible {
+  background: None;
+  width: 18%;
+  border: 0px solid white;
+}
+
+
+.main {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: 3s show ease;
+}
+
+
+.pad12x20 {
+  padding: 12px 20px;
+  width: 40%;
+  min-width:300px;
+}
+
+
+.d88 {
+  width: 60%;
+  min-width: 550;
+  
+}
+
+h1 {
+  font-family: Squartiqa4F, Squartiqa4F, normal;
+  text-align: right;
+  padding: 20px 20px;
+  color: #B42A40;
+  font-size: 250px;
+}
+
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 45% auto 45%;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 45% auto 45% auto;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 15% 15%;
+  min-width:700px;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: 50% 10% 5% 10%;
+  min-width:350px;
+}
+
+.grid-container5 {
+  display: grid;
+  grid-template-columns: auto 40% 40%;
+  min-width: 530;
+}
+
+
+.zone {
+  background-color: #1D2731;
+  border: 0px;
+  color: white;
+  width: 100%;
+  height: 40px;
+  padding: 0px 10px;
+  font-family: 'Aeroport';
+  min-width: 230px;
+}
+
+.standart {
+  background-color: #161D24;
+  color: #B42A40;
+  border: 0px;
+  width: 100%;
+  height: 40px;
+  padding: 0px 10px;
+  font-family: 'Squartiqa4FUltraLight', Squartiqa4FUltraLight, normal;
+  min-width: 230px;
+}
+
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+</style>
+
+<div class="main">
+
+  <div class="pad12x20">
+    <img src="cyberRed.svg" alt="logo" width="30%" style="min-width:250px">
+    <br>
+    <p class="f1" style="color:#BEBEBE;font-size:75%;">Форма регистрации нового пользователя киберспортивного клуба.</p>
+
+    <div class="grid-container" class="box2">
+      <div><input type="text" id="login" name="login" value="" placeholder="  Логин" class="form" required></div>
+      <div><label style="color:white;">*</label></div>
+      <div><input type="text" id="PERS" name="PERS" value="" placeholder="  ФИО"  class="form"  required></div>
+	<div style="color:white;">*</div>
+	<div><input type="password" id="password" name="password" value="" placeholder="  Пароль"  class="form"  required></div>
+	<div><label style="color:white;"> *</label></div>
+	<div><input type="password" id="confpassword" name="confpassword" value="" placeholder="  Подтверждение пароля"  class="form" required></div>
+	<div><label style="color:white;">*</label></div>
+	<div><input type="number" id="number" name="number" value="Логин" placeholder="  8 (777) 777-77-77"  class="form"></div>
+	<div></div>
+	<div><input type="email" id="Email" name="Email" value="" placeholder="  Email"  class="form"  required></div>
+	<div><label style="color:white;">*</label></div>
+
+    </div>
+
+
+    <p class="f1" style="color:#CA7B34;font-size:75%;">*Обязательное для заполнения</p>
+    <div>
+      <input type="checkbox" notchecked class="checkbox"><label class="f1" style="color:#FFFFFF;font-size:75%;">Согласен(а) с правилами посещения комплекса клуба</label><br>
+      <input type="checkbox" notchecked class="checkbox"><label class="f1" style="color:#FFFFFF;font-size:75%;">Согласен(а) с политикой обработки персональных данных</label>
+    </div>
+    <br>
+    
+
+    <div class="grid-container2">
+      <div><input type="submit" value="Вход" class="singin"></div>
+      <div></div>
+      <div><input type="submit" value="Регистрация" class="singup"></div>
+    </div>
+    <br>
+    <div>
+      <img src="bg.svg" alt="bg" width="100%" style="min-width:250px;">
+      
+    </div>
+    <p class="f1" style="color:white;">Раскладка клавиатуры</p>
+    <div style="color:#1D3449" class="grid-container3">
+      <img src="russia.svg" alt="ru" width="40%" style="border:5px solid #1D3449;padding:0px 10px;min-width:50px;background-color:#1D3449;">
+      <img src="united-states.svg" alt="us" width="40%" style="padding:0px 10x;min-width:50px;border:5px solid #1d344900;brightness:20;filter: brightness(50%);">
+    </div>
+    <div style="color:#1D3449" class="grid-container4">
+      <label class="f1" style="color:#5C5C5C;min-width:160px;font-size:90%;max-width:350px;">*Для смены раскладки ввода яыка нажмите комбинацию клавиш</label>
+      <label class="f1" style="color:white;text-align:center;padding:0px 3px;border-radius:4px;background-color:#405B74;min-width:30px;font-size:75%;">Alt</label>
+      <label class="f1" style="color:white;text-align:center;padding:0px 3px;font-size:75%;">+</label>
+      <label class="f1" style="color:white;text-align:center;padding:0px 3px;border-radius:4px;background-color:#405B74;min-width:40px;font-size:75%;">Shift</label>
+    </div>
+
+  </div>
+  
+
+
+
+  <div class="d88">
+    <h1 style="font-size:1500%">88</h1>
+    <div class="grid-container5">
+      <div></div>
+      <input type="submit" value="ВЫ НАХОДИТЕСЬ В ЗОНЕ" class="zone">
+      <input type="submit" value="STANDART" class="standart">
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+</html>
+
+
