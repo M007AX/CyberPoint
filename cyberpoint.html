@@ -134,8 +134,9 @@ h1 {
 
 .grid-container4 {
   display: grid;
-  grid-template-columns: 50% 10% 5% 10%;
+  grid-template-columns: 50% 1% 10% 5% 10%;
   min-width:350px;
+  align-items: center;
 }
 
 .grid-container5 {
@@ -172,6 +173,14 @@ h1 {
   to { opacity: 1; }
 }
 
+
+var signin = new Vue({
+  alert("текст");
+})
+
+
+
+
 </style>
 
 <div class="main">
@@ -182,18 +191,23 @@ h1 {
     <p class="f1" style="color:#BEBEBE;font-size:75%;">Форма регистрации нового пользователя киберспортивного клуба.</p>
 
     <div class="grid-container" class="box2">
-      <div><input type="text" id="login" name="login" value="" placeholder="  Логин" class="form" required></div>
-      <div><label style="color:white;">*</label></div>
-      <div><input type="text" id="PERS" name="PERS" value="" placeholder="  ФИО"  class="form"  required></div>
-	<div style="color:white;">*</div>
-	<div><input type="password" id="password" name="password" value="" placeholder="  Пароль"  class="form"  required></div>
-	<div><label style="color:white;"> *</label></div>
-	<div><input type="password" id="confpassword" name="confpassword" value="" placeholder="  Подтверждение пароля"  class="form" required></div>
-	<div><label style="color:white;">*</label></div>
-	<div><input type="number" id="number" name="number" value="Логин" placeholder="  8 (777) 777-77-77"  class="form"></div>
-	<div></div>
-	<div><input type="email" id="Email" name="Email" value="" placeholder="  Email"  class="form"  required></div>
-	<div><label style="color:white;">*</label></div>
+      <input type="text" id="login" name="login" value="" placeholder="  Логин" class="form" required>
+      <label style="color:white;">*</label>
+      
+      <input type="text" id="PERS" name="PERS" value="" placeholder="  ФИО"  class="form"  required>
+      <label style="color:white;">*</label>
+
+      <input type="password" id="password" name="password" value="" placeholder="  Пароль"  class="form"  required>
+      <label style="color:white;"> *</label>
+
+      <input type="password" id="confpassword" name="confpassword" value="" placeholder="  Подтверждение пароля"  class="form" required>
+      <label style="color:white;">*</label>
+
+      <input type="number" id="number" name="number" value="Логин" placeholder="  8 (777) 777-77-77"  class="form">
+      <div></div>
+      
+      <input type="email" id="Email" name="Email" value="" placeholder="  Email"  class="form"  required>
+      <label style="color:white;">*</label>
 
     </div>
 
@@ -207,9 +221,9 @@ h1 {
     
 
     <div class="grid-container2">
-      <div><input type="submit" value="Вход" class="singin"></div>
+      <input type="submit" value="Вход" class="singin" id="signin" v-on:click="">
       <div></div>
-      <div><input type="submit" value="Регистрация" class="singup"></div>
+      <input type="submit" value="Регистрация" class="singup">
     </div>
     <br>
     <div>
@@ -223,9 +237,10 @@ h1 {
     </div>
     <div style="color:#1D3449" class="grid-container4">
       <label class="f1" style="color:#5C5C5C;min-width:160px;font-size:90%;max-width:350px;">*Для смены раскладки ввода яыка нажмите комбинацию клавиш</label>
-      <label class="f1" style="color:white;text-align:center;padding:0px 3px;border-radius:4px;background-color:#405B74;min-width:30px;font-size:75%;">Alt</label>
+	<div></div>
+      <label class="f1" style="color:white;text-align:center;padding:0px 3px;border-radius:4px;background-color:#405B74;min-width:30px;font-size:75%;min-height:30px;">Alt</label>
       <label class="f1" style="color:white;text-align:center;padding:0px 3px;font-size:75%;">+</label>
-      <label class="f1" style="color:white;text-align:center;padding:0px 3px;border-radius:4px;background-color:#405B74;min-width:40px;font-size:75%;">Shift</label>
+      <label class="f1" style="color:white;text-align:center;padding:0px 3px;border-radius:4px;background-color:#405B74;min-width:40px;font-size:75%;min-height:30px;">Shift</label>
     </div>
 
   </div>
@@ -234,7 +249,10 @@ h1 {
 
 
   <div class="d88">
-    <h1 style="font-size:1500%">88</h1>
+    <div style="min-height:30%;"></div>
+    <div style="min-height:60%;text-align-last: right;">
+      <img src="88.svg" alt="88" style="min-width:250px; max-height:250px">
+    </div>
     <div class="grid-container5">
       <div></div>
       <input type="submit" value="ВЫ НАХОДИТЕСЬ В ЗОНЕ" class="zone">
