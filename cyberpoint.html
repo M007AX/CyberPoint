@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <style>
+
 body {
   background-image: url("Pattern_min-02.svg");
   overflow: hidden;
 }
 
-.form, select {
+.form, select { /* Для всех полей ввода */
   border: 2px solid white;
   box-sizing: border-box;
   padding: 1% 1%;
@@ -24,7 +25,7 @@ body {
 }
 
 input[required]::after {
-content: "*";
+  content: "*";
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -44,7 +45,7 @@ content: "*";
   font-family: Aeroport, Aeroport, normal;
 }
 
-.singin {
+.singin { /* Вход */
   background-image: url("Pattern_min-01.svg");
   border: 0px;
   color: white;
@@ -55,11 +56,11 @@ content: "*";
   cursor: pointer;
 }
 
-.singin:hover {
+.singin:hover { /* Наведение на вход */
     filter: brightness(120%);
 }
 
-.singup {
+.singup { /* Регистрация */
   background: None;
   border: 4px solid #B42A40;
   color: #B42A40;
@@ -70,7 +71,7 @@ content: "*";
   cursor: pointer;
 }
 	
-.singup:hover {
+.singup:hover { /* Наведение на регистрацию */
   filter: brightness(120%);
   color: white;
 }
