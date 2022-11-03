@@ -67,18 +67,13 @@ input[required]::after {
   width: 100%;
   height: 40px;
   padding: 0px 10px;
-  font-family: 'Squartiqa4FUltraLight', Squartiqa4FUltraLight, normal;
+  font-family: 'Squartiqa4FUltraLight';
   cursor: pointer;
 }
 	
 .singup:hover { /* Наведение на регистрацию */
   filter: brightness(120%);
   color: white;
-}
-.invisible {
-  background: None;
-  width: 18%;
-  border: 0px solid white;
 }
 
 .main {
@@ -107,14 +102,14 @@ h1 {
   font-size: 250px;
 }
 
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 45% auto 45% auto;
+}
+
 .grid-container2 {
   display: grid;
   grid-template-columns: 45% auto 45%;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 45% auto 45% auto;
 }
 
 .grid-container3 {
@@ -154,7 +149,7 @@ h1 {
   width: 100%;
   height: 40px;
   padding: 0px 10px;
-  font-family: 'Squartiqa4FUltraLight', Squartiqa4FUltraLight, normal;
+  font-family: 'Squartiqa4FUltraLight';
   min-width: 230px;
 }
 
@@ -165,7 +160,7 @@ h1 {
 
 @font-face {
   font-family: 'Squartiqa4FUltraLight';
-  font-weight: bold;
+  font-weight: normal;
   src: url('squartiqa-4f-ultralight.ttf') format('ttf');
   -moz-font-feature-settings: "liga=0"; 
   -moz-font-feature-settings: "liga" 0;
@@ -183,7 +178,7 @@ h1 {
     <br>
     <p class="f1" style="color:#BEBEBE;font-size:75%;">Форма регистрации нового пользователя киберспортивного клуба.</p>
 
-    <div class="grid-container" class="box2">
+    <div class="grid-container1">
       <input type="text" id="login" name="login" value="" placeholder="  Логин" class="form" required>
       <label style="color:white;">*</label>
       
